@@ -9,15 +9,14 @@
     "nest:start:dev": "nest start --watch -p server/tsconfig.build.json",
     "nest:start:debug": "nest start --debug --watch -p server/tsconfig.build.json",
     "nest:start:prod": "node dist/main",
-    "nest:lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "nest:lint": "eslint \"server/{src,apps,libs,test}/**/*.ts\" --fix",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "jest --config=jest.config.js",
     "test:watch": "jest --watch --config=jest.config.js",
     "test:coverage": "jest --coverage --config=jest.config.js",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
