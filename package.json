@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "nest:prebuild": "rimraf dist",
-    "nest:build": "nest build",
+    "nest:build": "nest build -p server/tsconfig.build.json",
     "nest:format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "nest:start": "nest start -p server/tsconfig.build.json",
     "nest:start:dev": "nest start --watch -p server/tsconfig.build.json",
