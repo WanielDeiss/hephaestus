@@ -1,0 +1,34 @@
+version: 2.1
+jobs:
+  build:
+    working_directory: ~/highscore-frontend
+    docker:
+      - image: circleci/node:13.1.6-browsers
+    steps:
+      - checkout
+      - restore_cache:
+        keys:
+          - v1-dependencies-{{ checksum "package-lock.json" }}
+          - v1-dependencies-
+      - run:
+        name: npm install
+        command: npm install
+      - save_cache:
+        paths:
+          - node_modules
+        key: v1-dependencies-{{ checksum "package-lock.json" }}
+      - run:
+          name: lint client
+          command: npm run ng:lint
+      - run:
+          name: lint server
+          command: npm run nest:lint
+      - run:
+          name: all tests
+          command: npm run test
+      - run:
+          name: build client
+          command: npm run ng:build
+      - run:
+          name: build server
+          command: npm run nest:build
