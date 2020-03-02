@@ -23,13 +23,8 @@
             "polyfills": "client/src/polyfills.ts",
             "tsConfig": "client/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "client/src/favicon.ico",
-              "client/src/assets"
-            ],
-            "styles": [
-              "client/src/styles.scss"
-            ],
+            "assets": ["client/src/favicon.ico", "client/src/assets"],
+            "styles": ["client/src/styles/app.scss"],
             "scripts": []
           },
           "configurations": {
@@ -87,9 +82,7 @@
               "client/tsconfig.app.json",
               "client/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
