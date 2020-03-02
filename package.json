@@ -13,9 +13,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test": "jest --config=jest.config.js",
+    "test:watch": "jest --watch --config=jest.config.js",
+    "test:coverage": "jest --coverage --config=jest.config.js",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -67,14 +67,5 @@
     "protractor": "~5.4.3",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
-  },
-  "jest": {
-    "preset": "jest-preset-angular",
-    "setupTestFrameworkScriptFile": "<rootDir>/client/setupJest.ts",
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "<rootDir>/client/tsconfig.spec.json"
-      }
-    }
   }
 }
