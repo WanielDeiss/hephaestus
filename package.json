@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "hephaestus",
   "version": "0.0.0",
   "scripts": {
     "nest:prebuild": "rimraf dist",
@@ -32,7 +32,9 @@
     "@nestjs/common": "^6.10.14",
     "@nestjs/core": "^6.10.14",
     "@nestjs/platform-fastify": "^6.11.8",
+    "@nestjs/swagger": "^4.3.1",
     "@nestjs/terminus": "^6.5.6",
+    "fastify-swagger": "^2.5.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
     "rxjs": "~6.5.4",
