@@ -30,6 +30,7 @@
     "@angular/router": "~9.0.4",
     "@godaddy/terminus": "^4.3.1",
     "@nestjs/common": "^6.11.9",
+    "@nestjs/config": "^0.2.2",
     "@nestjs/core": "^6.11.9",
     "@nestjs/platform-fastify": "^6.11.9",
     "@nestjs/swagger": "^4.3.2",
