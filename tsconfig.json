@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
     "sourceMap": true,
     "experimentalDecorators": true,
     "typeRoots": ["./node_modules/@types"]
