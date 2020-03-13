@@ -1,6 +1,7 @@
 {
   "name": "hephaestus",
   "version": "0.0.0",
+  "author": "Daniel Weiß <wanieldeiss@gmail.com> (https://github.com/WanielDeiss)",
   "scripts": {
     "docker:build": "docker build --rm -f \"Dockerfile\" -t hephaestus:latest \".\"",
     "docker:run": "docker run --rm -d -p 3000:3000/tcp hephaestus:latest",
@@ -21,7 +22,7 @@
     "test:watch": "jest --watch --config=jest.config.js",
     "test:coverage": "jest --coverage --config=jest.config.js"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~9.0.4",
     "@angular/common": "~9.0.4",
@@ -73,5 +74,13 @@
     "protractor": "~5.4.3",
     "tslint": "~6.0.0",
     "typescript": "~3.7.5"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/WanielDeiss/hephaestus/blob/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:WanielDeiss/hephaestus"
   }
 }
