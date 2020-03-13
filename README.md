@@ -1,4 +1,4 @@
-# [WIP] Hephaestus
+# Hephaestus
 
 [![CircleCI](https://circleci.com/gh/WanielDeiss/hephaestus.svg?style=svg)](https://circleci.com/gh/WanielDeiss/hephaestus)
 ![Docker Automated build](https://img.shields.io/docker/automated/wanieldeiss/hephaestus)
