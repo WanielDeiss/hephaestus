@@ -6,6 +6,16 @@
 ![Code Quality Score](https://www.code-inspector.com/project/4796/score/svg)
 ![Code Grade](https://www.code-inspector.com/project/4796/status/svg)
 
-Nest.js loves Angular
+> Nest.js loves Angular
 
-Private Boilerplate for fast Prototyping or Microservices with Microfrontends.
+## Why?
+
+- shared node modules and package.json
+- shared test framework -> jest
+- shared libs -> /imports/
+- one docker image
+- ...
+
+### TODOs
+
+find all [todos](https://github.com/WanielDeiss/hephaestus/issues) on the issue tab or create feature request.
